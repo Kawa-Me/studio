@@ -15,9 +15,9 @@ export default function ProfilePage() {
         <CardHeader className="items-center bg-muted/50 p-6 text-center">
           <Avatar className="h-24 w-24 border-4 border-background shadow-md">
             <AvatarImage src="https://placehold.co/100x100.png" alt="User avatar" data-ai-hint="profile avatar" />
-            <AvatarFallback>AA</AvatarFallback>
+            <AvatarFallback>HI</AvatarFallback>
           </Avatar>
-          <CardTitle className="mt-4 font-headline text-2xl">Usuário Alpha</CardTitle>
+          <CardTitle className="mt-4 font-headline text-2xl">Usuário Imparável</CardTitle>
           <CardDescription>Membro desde: 01 de Janeiro, 2024</CardDescription>
         </CardHeader>
         <CardContent className="p-6">

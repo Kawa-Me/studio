@@ -24,10 +24,10 @@ export type Bonus = {
 export const modules: Module[] = [
   {
     id: "mentalidade-alpha",
-    title: "🔥 Módulo 1 – Mentalidade do Macho Alpha Real",
+    title: "🔥 Módulo 1 – Mentalidade Imparável",
     description: "Desenvolva a mentalidade de um líder, confiante e autêntico, que atrai naturalmente o respeito e a admiração.",
     lessons: [
-      { id: "o-que-e-alpha-real", title: "O Que é Ser um Macho Alpha Hoje?", videoId: "hJ1CRSEaqMQ", path: "/modules/mentalidade-alpha/o-que-e-alpha-real" },
+      { id: "o-que-e-alpha-real", title: "O Que é Ser um Homem de Alto Valor?", videoId: "hJ1CRSEaqMQ", path: "/modules/mentalidade-alpha/o-que-e-alpha-real" },
       { id: "erro-dos-bonzinhos", title: "O Erro Fatal dos 'Bonzinhos'", path: "/modules/mentalidade-alpha/erro-dos-bonzinhos" },
       { id: "postura-dominante", title: "Como Criar Postura e Presença Dominante", videoId: "2NEiDwtj890", path: "/modules/mentalidade-alpha/postura-dominante" },
       { id: "confianca-timidez", title: "Como Desenvolver Confiança Mesmo Sendo Tímido", path: "/modules/mentalidade-alpha/confianca-timidez" },
@@ -53,11 +53,11 @@ export const modules: Module[] = [
     description: "Domine as técnicas práticas para seduzir e criar encontros memoráveis que evoluem para algo mais.",
     lessons: [
       { id: "como-marcar-encontros-naturalmente", title: "Como Marcar Encontros Naturalmente", videoId: "z0tWFuPrBMg", path: "/modules/tecnicas-seducao/como-marcar-encontros-naturalmente" },
-      { id: "frases-prontas-que-criam-conexao-profunda", title: "Frases Prontas Que Criam Conexão Profunda", path: "/modules/tecnicas-seducao/frases-prontas-que-criam-conexao-profunda" },
-      { id: "como-lidar-com-testes-femininos-e-joguinhos", title: "Como Lidar com Testes Femininos e Joguinhos", path: "/modules/tecnicas-seducao/como-lidar-com-testes-femininos-e-joguinhos" },
-      { id: "o-passo-a-passo-do-encontro-ideal", title: "O Passo a Passo do Encontro Ideal", path: "/modules/tecnicas-seducao/o-passo-a-passo-do-encontro-ideal" },
-      { id: "como-sair-do-primeiro-beijo-para-o-sexo", title: "Como Sair do Primeiro Beijo Para o Sexo", path: "/modules/tecnicas-seducao/como-sair-do-primeiro-beijo-para-o-sexo" },
-      { id: "como-se-comportar-para-gerar-desejo-durante-o-encontro", title: "Como se Comportar para Gerar Desejo Durante o Encontro", path: "/modules/tecnicas-seducao/como-se-comportar-para-gerar-desejo-durante-o-encontro" },
+      { id: "frases-prontas-que-criam-conexao-profunda", title: "Frases Prontas Que Criam Conexão Profunda", videoId: "exemplo7", path: "/modules/tecnicas-seducao/frases-prontas-que-criam-conexao-profunda" },
+      { id: "como-lidar-com-testes-femininos-e-joguinhos", title: "Como Lidar com Testes Femininos e Joguinhos", videoId: "exemplo8", path: "/modules/tecnicas-seducao/como-lidar-com-testes-femininos-e-joguinhos" },
+      { id: "o-passo-a-passo-do-encontro-ideal", title: "O Passo a Passo do Encontro Ideal", videoId: "exemplo9", path: "/modules/tecnicas-seducao/o-passo-a-passo-do-encontro-ideal" },
+      { id: "como-sair-do-primeiro-beijo-para-o-sexo", title: "Como Sair do Primeiro Beijo Para o Sexo", videoId: "exemplo10", path: "/modules/tecnicas-seducao/como-sair-do-primeiro-beijo-para-o-sexo" },
+      { id: "como-se-comportar-para-gerar-desejo-durante-o-encontro", title: "Como se Comportar para Gerar Desejo Durante o Encontro", videoId: "exemplo11", path: "/modules/tecnicas-seducao/como-se-comportar-para-gerar-desejo-durante-o-encontro" },
     ],
   },
   {
@@ -65,11 +65,12 @@ export const modules: Module[] = [
     title: "🔥 Módulo 4 – Domínio Sexual – Como Durar Mais e Dar Mais Prazer",
     description: "Transforme sua performance na cama com técnicas para controle ejaculatório e para maximizar o prazer dela.",
     lessons: [
-      { id: "fisiologia-orgasmo", title: "Entendendo a Fisiologia do Orgasmo", path: "/modules/dominio-sexual/fisiologia-orgasmo" },
-      { id: "exercicios-respiracao", title: "Exercícios de Kegel e Respiração", path: "/modules/dominio-sexual/exercicios-respiracao" },
-      { id: "retardar-ejaculacao", title: "Técnicas para Retardar a Ejaculação", path: "/modules/dominio-sexual/retardar-ejaculacao" },
-      { id: "mapeando-corpo", title: "Mapeando o Corpo Feminino para o Prazer", path: "/modules/dominio-sexual/mapeando-corpo" },
-      { id: "importancia-preliminares", title: "A Importância das Preliminares", path: "/modules/dominio-sexual/importancia-preliminares" },
+      { id: "erros-gozar-rapido", title: "Os 5 Maiores Erros que Fazem o Homem Gozar Rápido", videoId: "Xs0mDjB0Fag", path: "/modules/dominio-sexual/erros-gozar-rapido" },
+      { id: "controlar-ejaculacao", title: "Como Controlar a Ejaculação com Respiração e Foco Muscular", videoId: "JmIjeYtcbvg", path: "/modules/dominio-sexual/controlar-ejaculacao" },
+      { id: "segredo-ritmo", title: "O 'Segredo do Ritmo' que Enlouquece Qualquer Mulher", videoId: "k1ZbMRGN-sk", path: "/modules/dominio-sexual/segredo-ritmo" },
+      { id: "estimular-zonas-erogenas", title: "Como Estimular Zonas Erógenas Pouco Exploradas", videoId: "QDgZicf4VUc", path: "/modules/dominio-sexual/estimular-zonas-erogenas" },
+      { id: "satisfazer-corpo-feminino", title: "Como Entender e Satisfazer o Corpo Feminino", videoId: "ATx_ALLgLtc", path: "/modules/dominio-sexual/satisfazer-corpo-feminino" },
+      { id: "erecoes-fortes", title: "Como Ter Ereções Mais Fortes Naturalmente", videoId: "ZFpV-r6FVfM", path: "/modules/dominio-sexual/erecoes-fortes" },
     ],
   },
   {

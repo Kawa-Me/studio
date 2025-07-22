@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Alpha Ascent',
+  title: 'MÉTODO HOMEM IMPARÁVEL',
   description: 'O caminho para sua melhor versão.',
 };
 
