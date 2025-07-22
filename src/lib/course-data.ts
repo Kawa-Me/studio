@@ -99,7 +99,8 @@ export const bonuses: Bonus[] = [
     {
         title: "🎁 BÔNUS 2: Exercícios Diários para Controle da Ejaculação",
         description: "Um guia prático com rotinas de exercícios diários para fortalecer seu assoalho pélvico e ganhar controle total sobre sua ejaculação.",
-        icon: HeartPulse
+        icon: HeartPulse,
+        path: "/bonus/ejaculation-control"
     },
     {
         title: "🎁 BÔNUS 3: Masterclass com Terapeuta Sexual",
