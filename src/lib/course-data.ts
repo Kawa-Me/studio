@@ -52,11 +52,12 @@ export const modules: Module[] = [
     title: "💣 Módulo 3 – Técnicas de Sedução e Encontro",
     description: "Domine as técnicas práticas para seduzir e criar encontros memoráveis que evoluem para algo mais.",
     lessons: [
-      { id: "online-para-real", title: "Do Online para o Encontro Real", path: "/modules/tecnicas-seducao/online-para-real" },
-      { id: "escalando-toque", title: "Escalando o Toque Físico com Respeito", path: "/modules/tecnicas-seducao/escalando-toque" },
-      { id: "beijos-marcantes", title: "Beijos que Deixam Marcas", path: "/modules/tecnicas-seducao/beijos-marcantes" },
-      { id: "lendo-sinais", title: "Lendo os Sinais de Interesse Dela", path: "/modules/tecnicas-seducao/lendo-sinais" },
-      { id: "convite-final", title: "Como Convidá-la para Sua Casa", path: "/modules/tecnicas-seducao/convite-final" },
+      { id: "como-marcar-encontros-naturalmente", title: "Como Marcar Encontros Naturalmente", videoId: "z0tWFuPrBMg", path: "/modules/tecnicas-seducao/como-marcar-encontros-naturalmente" },
+      { id: "frases-prontas-que-criam-conexao-profunda", title: "Frases Prontas Que Criam Conexão Profunda", path: "/modules/tecnicas-seducao/frases-prontas-que-criam-conexao-profunda" },
+      { id: "como-lidar-com-testes-femininos-e-joguinhos", title: "Como Lidar com Testes Femininos e Joguinhos", path: "/modules/tecnicas-seducao/como-lidar-com-testes-femininos-e-joguinhos" },
+      { id: "o-passo-a-passo-do-encontro-ideal", title: "O Passo a Passo do Encontro Ideal", path: "/modules/tecnicas-seducao/o-passo-a-passo-do-encontro-ideal" },
+      { id: "como-sair-do-primeiro-beijo-para-o-sexo", title: "Como Sair do Primeiro Beijo Para o Sexo", path: "/modules/tecnicas-seducao/como-sair-do-primeiro-beijo-para-o-sexo" },
+      { id: "como-se-comportar-para-gerar-desejo-durante-o-encontro", title: "Como se Comportar para Gerar Desejo Durante o Encontro", path: "/modules/tecnicas-seducao/como-se-comportar-para-gerar-desejo-durante-o-encontro" },
     ],
   },
   {
