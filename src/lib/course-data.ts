@@ -105,6 +105,7 @@ export const bonuses: Bonus[] = [
     {
         title: "🎁 BÔNUS 3: Masterclass com Terapeuta Sexual",
         description: "Uma aula exclusiva com uma especialista em sexualidade para tirar dúvidas, quebrar tabus e aprofundar seu conhecimento sobre prazer.",
-        icon: Video
+        icon: Video,
+        path: "/bonus/masterclass"
     }
 ]
