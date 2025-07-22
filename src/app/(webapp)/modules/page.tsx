@@ -1,11 +1,13 @@
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { VideoPlayer } from "@/components/video-player";
 import { modules } from "@/lib/course-data";
+import Link from "next/link";
+import { PlayCircle } from "lucide-react";
 
 export default function ModulesPage() {
   return (
@@ -20,18 +22,20 @@ export default function ModulesPage() {
       </header>
       <Accordion type="single" collapsible className="w-full">
         {modules.map((module, index) => (
-          <AccordionItem key={index} value={`item-${index}`} className="mb-4 rounded-lg border bg-card/80 px-4 shadow-sm">
+          <AccordionItem key={module.id} value={`item-${index}`} className="mb-4 rounded-lg border bg-card/80 px-4 shadow-sm">
             <AccordionTrigger className="text-left font-headline text-lg hover:no-underline md:text-xl">
               {module.title}
             </AccordionTrigger>
             <AccordionContent className="pt-2">
               <p className="mb-6 text-muted-foreground">{module.description}</p>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                {module.videos.map((video) => (
-                  <div key={video.id}>
-                    <h4 className="mb-2 font-semibold">{video.title}</h4>
-                    <VideoPlayer videoId={video.id} />
-                  </div>
+              <div className="space-y-4">
+                {module.lessons.map((lesson) => (
+                  <Link href={lesson.path} key={lesson.id} className="block rounded-md border p-4 transition-colors hover:bg-muted/50">
+                    <div className="flex items-center justify-between">
+                      <h4 className="font-semibold">{lesson.title}</h4>
+                      <PlayCircle className="h-6 w-6 text-primary" />
+                    </div>
+                  </Link>
                 ))}
               </div>
             </AccordionContent>

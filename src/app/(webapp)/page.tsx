@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -6,8 +7,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { VideoPlayer } from "@/components/video-player";
 import { modules } from "@/lib/course-data";
+import Link from "next/link";
+import { PlayCircle } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -38,12 +40,14 @@ export default function HomePage() {
                       {module.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {module.videos.map((video) => (
-                      <div key={video.id}>
-                        <h4 className="mb-2 font-semibold text-sm">{video.title}</h4>
-                        <VideoPlayer videoId={video.id} />
-                      </div>
+                  <CardContent className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {module.lessons.map((lesson) => (
+                       <Link href={lesson.path} key={lesson.id} className="block rounded-md border bg-background/50 p-4 transition-colors hover:bg-muted/50">
+                        <div className="flex items-center justify-between">
+                          <h4 className="flex-1 font-semibold text-sm">{lesson.title}</h4>
+                          <PlayCircle className="h-5 w-5 text-primary" />
+                        </div>
+                      </Link>
                     ))}
                   </CardContent>
                 </Card>
