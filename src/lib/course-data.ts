@@ -39,11 +39,12 @@ export const modules: Module[] = [
     title: "💬 Módulo 2 – Como Atrair Mulheres Sem Forçar Nada",
     description: "Aprenda a arte da atração genuína, comunicando seu valor sem precisar de joguinhos ou manipulação.",
     lessons: [
-      { id: "psicologia-atracao", title: "A Psicologia da Atração Feminina", path: "/modules/atrair-mulheres/psicologia-atracao" },
-      { id: "iniciar-conversas", title: "Como Iniciar Conversas de Forma Natural", path: "/modules/atrair-mulheres/iniciar-conversas" },
-      { id: "humor-inteligencia", title: "Humor e Inteligência na Sedução", path: "/modules/atrair-mulheres/humor-inteligencia" },
-      { id: "tensao-sexual", title: "Criando Tensão Sexual Positiva", path: "/modules/atrair-mulheres/tensao-sexual" },
-      { id: "primeiro-encontro", title: "O Guia do Primeiro Encontro", path: "/modules/atrair-mulheres/primeiro-encontro" },
+      { id: "psicologia-atracao", title: "O Que Realmente Atrai as Mulheres", videoId: "h3rAfOuYzh0", path: "/modules/atrair-mulheres/psicologia-atracao" },
+      { id: "vestir-e-portar", title: "Como se Vestir e Portar para Atração Automática", videoId: "szXwbwRH-4E", path: "/modules/atrair-mulheres/vestir-e-portar" },
+      { id: "gatilhos-atracao", title: "Os 3 Gatilhos de Atração Instantânea", videoId: "UxsO0YNgiX4", path: "/modules/atrair-mulheres/gatilhos-atracao" },
+      { id: "linguagem-corporal", title: "A Linguagem Corporal que Atrai Sem Dizer Uma Palavra", videoId: "yLH0_KGUSrI", path: "/modules/atrair-mulheres/linguagem-corporal" },
+      { id: "puxar-assunto", title: "Como Puxar Assunto do Jeito Certo", videoId: "5MelvOkaD-M", path: "/modules/atrair-mulheres/puxar-assunto" },
+      { id: "criar-tensao", title: "Como Criar Tensão e Fazer Ela Pensar em Você", videoId: "JXUP3wTPJiE", path: "/modules/atrair-mulheres/criar-tensao" },
     ],
   },
   {
