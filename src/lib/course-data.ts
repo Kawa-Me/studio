@@ -78,11 +78,11 @@ export const modules: Module[] = [
     title: "🔑 Módulo 5 – Estilo de Vida Atraente – O Cara que Elas Querem ao Lado",
     description: "Construa um estilo de vida que não só atrai mulheres, mas também te traz realização pessoal e felicidade.",
     lessons: [
-      { id: "cuidando-aparencia", title: "Cuidando da Aparência: Estilo e Higiene", path: "/modules/estilo-vida/cuidando-aparencia" },
-      { id: "hobbies-paixoes", title: "Hobbies e Paixões que te Tornam Interessante", path: "/modules/estilo-vida/hobbies-paixoes" },
-      { id: "inteligencia-financeira", title: "Inteligência Financeira e Ambição", path: "/modules/estilo-vida/inteligencia-financeira" },
-      { id: "circulo-social", title: "Construindo um Círculo Social de Valor", path: "/modules/estilo-vida/circulo-social" },
-      { id: "mantendo-chama", title: "Mantendo a Chama Acesa no Relacionamento", path: "/modules/estilo-vida/mantendo-chama" },
+      { id: "proposito-rotina", title: "Como Ter um Propósito e Rotina que Impõe Respeito", videoId: "o78zXqAZAwQ", path: "/modules/estilo-vida/proposito-rotina" },
+      { id: "cuidar-aparencia", title: "Como Cuidar da Aparência Sem Parecer Vaidoso Demais", videoId: "Iwpb6VZ3pkw", path: "/modules/estilo-vida/cuidar-aparencia" },
+      { id: "redes-sociais", title: "Redes Sociais Que Atraem (O Que Mostrar e O Que Evitar)", videoId: "lJQkA0dUiZc", path: "/modules/estilo-vida/redes-sociais" },
+      { id: "gerar-valor-social", title: "Como Gerar Valor Social (O Cara que as Outras Querem)", videoId: "AmW8s-5Bmsw", path: "/modules/estilo-vida/gerar-valor-social" },
+      { id: "homem-completo", title: "Como se Tornar um Homem Completo: Corpo, Mente e Sexualidade", videoId: "FMEMxRtwnH0", path: "/modules/estilo-vida/homem-completo" },
     ],
   },
 ];
