@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { bonuses } from "@/lib/course-data";
+import Link from "next/link";
 
 export default function BonusPage() {
     return (
@@ -12,18 +13,23 @@ export default function BonusPage() {
                     Ferramentas extras para acelerar sua jornada.
                 </p>
             </header>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {bonuses.map((bonus, index) => (
-                    <Card key={index} className="flex flex-col bg-card/80">
-                        <CardHeader className="flex flex-row items-center gap-4">
-                            <bonus.icon className="h-10 w-10 shrink-0 text-primary" />
-                            <CardTitle className="font-headline text-lg">{bonus.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent className="flex-grow">
-                            <p className="text-muted-foreground">{bonus.description}</p>
-                        </CardContent>
-                    </Card>
-                ))}
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1">
+                {bonuses.map((bonus, index) => {
+                    const CardWrapper = bonus.path ? Link : 'div';
+                    return (
+                        <CardWrapper href={bonus.path || ''} key={index} className="block transition-colors hover:bg-muted/50">
+                            <Card className="flex h-full flex-col bg-card/80">
+                                <CardHeader className="flex flex-row items-center gap-4">
+                                    <bonus.icon className="h-10 w-10 shrink-0 text-primary" />
+                                    <CardTitle className="font-headline text-lg">{bonus.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent className="flex-grow">
+                                    <p className="text-muted-foreground">{bonus.description}</p>
+                                </CardContent>
+                            </Card>
+                        </CardWrapper>
+                    )
+                })}
             </div>
         </div>
     )

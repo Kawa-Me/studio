@@ -19,6 +19,7 @@ export type Bonus = {
   title: string;
   description: string;
   icon: React.ComponentType<{ className?: string }>;
+  path?: string;
 };
 
 export const modules: Module[] = [
@@ -92,7 +93,8 @@ export const bonuses: Bonus[] = [
     {
         title: "🎁 BÔNUS 1: Lista de Mensagens Prontas para Criar Conexão",
         description: "Copie e cole mensagens testadas para gerar conversas interessantes e criar uma conexão genuína, do primeiro 'oi' até o convite para sair.",
-        icon: ListChecks
+        icon: ListChecks,
+        path: "/bonus/connection-messages"
     },
     {
         title: "🎁 BÔNUS 2: Exercícios Diários para Controle da Ejaculação",
