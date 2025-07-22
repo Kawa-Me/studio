@@ -1,4 +1,5 @@
 
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -177,7 +178,8 @@ const proseStyles = `
 .prose a { color: hsl(var(--primary)); text-decoration: none; }
 .prose a:hover { text-decoration: underline; }
 .prose ul, .prose ol {
-  margin-left: 1.5rem;
+  margin-left: 0;
+  padding-left: 1.5rem;
   margin-bottom: 1.25em;
 }
 .prose li { margin-bottom: 0.5em; }
@@ -189,6 +191,21 @@ const proseStyles = `
   color: hsl(var(--muted-foreground));
   margin-left: 0;
   margin-right: 0;
+}
+.prose ul, .prose ol {
+    padding-left: 1.5rem;
+}
+.prose ul > li::before {
+    content: '•';
+    margin-right: 0.5rem;
+    color: hsl(var(--primary));
+}
+.prose ol > li::marker {
+    font-weight: 600;
+    color: hsl(var(--primary));
+}
+.dark .prose ul > li::before, .dark .prose ol > li::marker {
+    color: hsl(var(--primary));
 }
 `;
 

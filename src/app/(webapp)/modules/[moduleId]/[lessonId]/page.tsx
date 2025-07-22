@@ -916,13 +916,13 @@ const lessonContents: Record<string, React.ComponentType> = {
 </ul>
 <h2>Erros Comuns de Aparência</h2>
 <ul>
-<li>❌ **Roupas mal passadas ou amarrotadas**</li>
-<li>❌ **Sapatos sujos ou gastos**</li>
-<li>❌ **Excesso de perfume**</li>
-<li>❌ **Roupas muito apertadas ou muito largas**</li>
-<li>❌ **Negligenciar a higiene básica**</li>
-<li>❌ **Usar sempre as mesmas roupas**</li>
-<li>❌ **Não adequar o visual à ocasião**</li>
+<li>❌ <strong>Roupas mal passadas ou amarrotadas</strong></li>
+<li>❌ <strong>Sapatos sujos ou gastos</strong></li>
+<li>❌ <strong>Excesso de perfume</strong></li>
+<li>❌ <strong>Roupas muito apertadas ou muito largas</strong></li>
+<li>❌ <strong>Negligenciar a higiene básica</strong></li>
+<li>❌ <strong>Usar sempre as mesmas roupas</strong></li>
+<li>❌ <strong>Não adequar o visual à ocasião</strong></li>
 </ul>
 <h2>Adaptando o Visual para Diferentes Ocasiões</h2>
 <h3>Casual/Dia a Dia:</h3>
@@ -3516,6 +3516,21 @@ const proseStyles = `
   color: hsl(var(--muted-foreground));
   margin-left: 0;
   margin-right: 0;
+}
+.prose ul, .prose ol {
+    padding-left: 1.5rem;
+}
+.prose ul > li::before {
+    content: '•';
+    margin-right: 0.5rem;
+    color: hsl(var(--primary));
+}
+.prose ol > li::marker {
+    font-weight: 600;
+    color: hsl(var(--primary));
+}
+.dark .prose ul > li::before, .dark .prose ol > li::marker {
+    color: hsl(var(--primary));
 }
 `;
 
