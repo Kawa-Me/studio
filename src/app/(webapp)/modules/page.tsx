@@ -24,7 +24,9 @@ export default function ModulesPage() {
         {modules.map((module, index) => (
           <AccordionItem key={module.id} value={`item-${index}`} className="mb-4 rounded-xl border border-border bg-card/80 px-4 shadow-lg transition-all hover:border-primary/50 hover:shadow-primary/10">
             <AccordionTrigger className="text-left font-headline text-lg hover:no-underline md:text-2xl">
-              <span className="text-primary">{module.title}</span>
+              <Link href={module.lessons[0]?.path || `/modules/${module.id}`}>
+                <span className="text-primary">{module.title}</span>
+              </Link>
             </AccordionTrigger>
             <AccordionContent className="pt-4">
               <p className="mb-6 text-muted-foreground">{module.description}</p>

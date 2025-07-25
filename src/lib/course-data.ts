@@ -29,10 +29,10 @@ export const modules: Module[] = [
     description: "Desenvolva a mentalidade de um líder, confiante e autêntico, que atrai naturalmente o respeito e a admiração.",
     lessons: [
       { id: "o-que-e-alpha-real", title: "O Que é Ser um Homem de Alto Valor?", videoId: "hJ1CRSEaqMQ", path: "/modules/mentalidade-alpha/o-que-e-alpha-real" },
-      { id: "erro-dos-bonzinhos", title: "O Erro Fatal dos 'Bonzinhos'", path: "/modules/mentalidade-alpha/erro-dos-bonzinhos" },
+      { id: "erro-dos-bonzinhos", title: "O Erro Fatal dos 'Bonzinhos'", path: "/modules/mentalidade-alpha/erro-dos-bonzinhos", videoId: "bO45Tcy_55M" },
       { id: "postura-dominante", title: "Como Criar Postura e Presença Dominante", videoId: "2NEiDwtj890", path: "/modules/mentalidade-alpha/postura-dominante" },
-      { id: "confianca-timidez", title: "Como Desenvolver Confiança Mesmo Sendo Tímido", path: "/modules/mentalidade-alpha/confianca-timidez" },
-      { id: "crencas-limitantes", title: "Quebrando Crenças Limitantes", path: "/modules/mentalidade-alpha/crencas-limitantes" },
+      { id: "confianca-timidez", title: "Como Desenvolver Confiança Mesmo Sendo Tímido", path: "/modules/mentalidade-alpha/confianca-timidez", videoId: "Yl__q-4w2uE" },
+      { id: "crencas-limitantes", title: "Quebrando Crenças Limitantes", path: "/modules/mentalidade-alpha/crencas-limitantes", videoId: "m_VvxANt4pQ" },
     ],
   },
   {
@@ -54,11 +54,11 @@ export const modules: Module[] = [
     description: "Domine as técnicas práticas para seduzir e criar encontros memoráveis que evoluem para algo mais.",
     lessons: [
       { id: "como-marcar-encontros-naturalmente", title: "Como Marcar Encontros Naturalmente", videoId: "z0tWFuPrBMg", path: "/modules/tecnicas-seducao/como-marcar-encontros-naturalmente" },
-      { id: "frases-prontas-que-criam-conexao-profunda", title: "Frases Prontas Que Criam Conexão Profunda", videoId: "exemplo7", path: "/modules/tecnicas-seducao/frases-prontas-que-criam-conexao-profunda" },
-      { id: "como-lidar-com-testes-femininos-e-joguinhos", title: "Como Lidar com Testes Femininos e Joguinhos", videoId: "exemplo8", path: "/modules/tecnicas-seducao/como-lidar-com-testes-femininos-e-joguinhos" },
-      { id: "o-passo-a-passo-do-encontro-ideal", title: "O Passo a Passo do Encontro Ideal", videoId: "exemplo9", path: "/modules/tecnicas-seducao/o-passo-a-passo-do-encontro-ideal" },
-      { id: "como-sair-do-primeiro-beijo-para-o-sexo", title: "Como Sair do Primeiro Beijo Para o Sexo", videoId: "exemplo10", path: "/modules/tecnicas-seducao/como-sair-do-primeiro-beijo-para-o-sexo" },
-      { id: "como-se-comportar-para-gerar-desejo-durante-o-encontro", title: "Como se Comportar para Gerar Desejo Durante o Encontro", videoId: "exemplo11", path: "/modules/tecnicas-seducao/como-se-comportar-para-gerar-desejo-durante-o-encontro" },
+      { id: "frases-prontas-que-criam-conexao-profunda", title: "Frases Prontas Que Criam Conexão Profunda", videoId: "4_q1y81f3kA", path: "/modules/tecnicas-seducao/frases-prontas-que-criam-conexao-profunda" },
+      { id: "como-lidar-com-testes-femininos-e-joguinhos", title: "Como Lidar com Testes Femininos e Joguinhos", videoId: "L9Yh_C60CgY", path: "/modules/tecnicas-seducao/como-lidar-com-testes-femininos-e-joguinhos" },
+      { id: "o-passo-a-passo-do-encontro-ideal", title: "O Passo a Passo do Encontro Ideal", videoId: "0bE-vV_G3YI", path: "/modules/tecnicas-seducao/o-passo-a-passo-do-encontro-ideal" },
+      { id: "como-sair-do-primeiro-beijo-para-o-sexo", title: "Como Sair do Primeiro Beijo Para o Sexo", videoId: "Qp01-5t2XwI", path: "/modules/tecnicas-seducao/como-sair-do-primeiro-beijo-para-o-sexo" },
+      { id: "como-se-comportar-para-gerar-desejo-durante-o-encontro", title: "Como se Comportar para Gerar Desejo Durante o Encontro", videoId: "k_aTfA1hH7w", path: "/modules/tecnicas-seducao/como-se-comportar-para-gerar-desejo-durante-o-encontro" },
     ],
   },
   {
