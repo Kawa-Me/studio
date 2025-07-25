@@ -1,12 +1,13 @@
+
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Dumbbell, Gift, User, Settings } from "lucide-react";
+import { Home, Dumbbell, Gift, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { href: "/", label: "Início", icon: Home },
+  { href: "/app", label: "Início", icon: Home },
   { href: "/modules", label: "Módulos", icon: Dumbbell },
   { href: "/bonus", label: "Bônus", icon: Gift },
   { href: "/profile", label: "Perfil", icon: User },
@@ -20,9 +21,15 @@ export function BottomNav() {
       <div className="mx-auto grid h-20 max-w-lg grid-cols-4 items-center justify-around gap-2 px-2">
         {navItems.map((item) => {
           const isActive =
-            item.href === "/"
+            item.href === "/app"
               ? pathname === item.href
-              : pathname.startsWith(item.href);
+              : pathname.startsWith(item.href) && item.href !== '/app';
+          
+          if (item.href === "/app" && pathname !== "/app") {
+              const isActive = false
+          }
+
+
           return (
             <Link
               key={item.href}

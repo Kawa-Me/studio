@@ -1,13 +1,5 @@
 
 import { BottomNav } from "@/components/bottom-nav";
-import { Home, Dumbbell, Gift, User, Settings } from "lucide-react";
-
-const navItems = [
-  { href: "/", label: "Início", icon: Home },
-  { href: "/modules", label: "Módulos", icon: Dumbbell },
-  { href: "/bonus", label: "Bônus", icon: Gift },
-  { href: "/profile", label: "Perfil", icon: User },
-];
 
 export default function WebAppLayout({
   children,
