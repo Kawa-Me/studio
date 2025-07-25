@@ -15,11 +15,10 @@ export default function ProfilePage() {
       <Card className="overflow-hidden rounded-xl border border-border bg-card/80 shadow-lg">
         <CardHeader className="items-center bg-muted/30 p-8 text-center">
           <Avatar className="h-32 w-32 border-4 border-primary/50 shadow-lg">
-            <AvatarImage src="https://placehold.co/128x128.png" alt="User avatar" data-ai-hint="profile avatar" />
-            <AvatarFallback>HI</AvatarFallback>
+            <AvatarImage src="https://placehold.co/128x128.png" alt="User avatar" data-ai-hint="alpha wolf" />
+            <AvatarFallback>UA</AvatarFallback>
           </Avatar>
-          <CardTitle className="mt-4 font-headline text-3xl">Usuário Imparável</CardTitle>
-          <CardDescription className="text-lg">Membro desde: 01 de Janeiro, 2024</CardDescription>
+          <CardTitle className="mt-4 font-headline text-3xl">Usuário Alpha</CardTitle>
         </CardHeader>
         <CardContent className="p-8">
             <div className="grid grid-cols-3 gap-4 text-center mb-8">
@@ -41,7 +40,6 @@ export default function ProfilePage() {
             </div>
             <Separator className="my-8" />
             <div className="space-y-4 text-center">
-                <Button size="lg" className="w-full max-w-sm">Editar Perfil</Button>
                 <Button size="lg" variant="secondary" className="w-full max-w-sm">Minha Conta</Button>
                  <Button size="lg" variant="ghost" className="w-full max-w-sm text-destructive hover:bg-destructive/10 hover:text-destructive">
                     Sair
