@@ -26,7 +26,7 @@ export default function WebAppLayout({
             <SidebarMenu>
               {navItems.map((item) => (
                  <SidebarMenuItem key={item.href}>
-                  <Link href={item.href} legacyBehavior passHref>
+                  <Link href={item.href} passHref>
                     <SidebarMenuButton>
                       <item.icon />
                       <span>{item.label}</span>
