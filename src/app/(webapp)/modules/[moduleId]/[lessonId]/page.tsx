@@ -497,7 +497,7 @@ const lessonContents: Record<string, React.ComponentType> = {
   )
 };
 
-export default async function LessonPage({
+export default function LessonPage({
   params,
 }: {
   params: { moduleId: string; lessonId: string };
