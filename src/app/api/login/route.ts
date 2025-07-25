@@ -6,8 +6,8 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { username, password } = body;
 
-  // Corrigido: Usando os valores diretamente em vez de variáveis de ambiente não definidas.
-  if (username === "Alpha" && password === "Alpha123") {
+  // Lógica de login fictícia: aceita qualquer entrada desde que não esteja vazia.
+  if (username && password) {
     const cookieStore = cookies();
     cookieStore.set('auth-token', 'valid-token-for-alpha-ascent', { 
         httpOnly: true, 
