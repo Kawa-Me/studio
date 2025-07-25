@@ -446,19 +446,19 @@ const lessonContents: Record<string, React.ComponentType> = {
   ),
   'redes-sociais': () => (
     <article className="prose dark:prose-invert max-w-none">
-      <h1 className="text-3xl font-bold text-primary">Redes Sociais Que Atraem (O Que Mostrar e O Que Evitar)</h1>
-      <p className="text-xl text-muted-foreground">Suas redes sociais são sua marca pessoal online. Use-as para apresentar uma imagem autêntica, interessante e de alto valor.</p>
-      <Separator className="my-8" />
-      <h2 className="font-headline text-2xl font-semibold">O Que Mostrar para Atrair</h2>
-      <ul className="list-disc pl-5 space-y-2 mt-4">
-        <li><strong>Sua Vida com Propósito:</strong> Compartilhe seus hobbies, paixões e projetos.</li>
-        <li><strong>Seu Lado Social:</strong> Fotos com amigos em eventos mostram que você é socialmente calibrado.</li>
-        <li><strong>Seu Estilo:</strong> Fotos onde você está bem-apresentado reforçam a imagem de autocuidado.</li>
-        <li><strong>Senso de Humor:</strong> Mostre que você é leve e divertido.</li>
-      </ul>
-      <Separator className="my-8" />
-      <h2 className="font-headline text-2xl font-semibold">O Que Evitar</h2>
-      <p>Evite ostentação excessiva, reclamações e negatividade, excesso de selfies sem camisa e conteúdo polêmico. Um perfil vazio também é um sinal de alerta.</p>
+        <h1 className="text-3xl font-bold text-primary">Redes Sociais Que Atraem (O Que Mostrar e O Que Evitar)</h1>
+        <p className="text-xl text-muted-foreground">Suas redes sociais são sua marca pessoal online. Use-as para apresentar uma imagem autêntica, interessante e de alto valor.</p>
+        <Separator className="my-8" />
+        <h2 className="font-headline text-2xl font-semibold">O Que Mostrar para Atrair</h2>
+        <ul className="list-disc pl-5 space-y-2 mt-4">
+            <li><strong>Sua Vida com Propósito:</strong> Compartilhe seus hobbies, paixões e projetos.</li>
+            <li><strong>Seu Lado Social:</strong> Fotos com amigos em eventos mostram que você é socialmente calibrado.</li>
+            <li><strong>Seu Estilo:</strong> Fotos onde você está bem-apresentado reforçam a imagem de autocuidado.</li>
+            <li><strong>Senso de Humor:</strong> Mostre que você é leve e divertido.</li>
+        </ul>
+        <Separator className="my-8" />
+        <h2 className="font-headline text-2xl font-semibold">O Que Evitar</h2>
+        <p>Evite ostentação excessiva, reclamações e negatividade, excesso de selfies sem camisa e conteúdo polêmico. Um perfil vazio também é um sinal de alerta.</p>
     </article>
   ),
   'gerar-valor-social': () => (
