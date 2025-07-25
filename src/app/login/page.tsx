@@ -30,8 +30,8 @@ export default function LoginPage() {
       });
 
       if (response.ok) {
-        // A rota de API lida com o cookie, então apenas redirecionamos.
-        // O router.refresh() é importante para que o middleware seja reavaliado.
+        // A rota de API lida com o cookie.
+        // Apenas redirecionamos e o middleware fará o resto.
         router.push("/app");
         router.refresh();
       } else {

@@ -20,10 +20,7 @@ export function BottomNav() {
     <nav className="fixed bottom-0 left-0 right-0 z-50 mt-8 border-t border-border/50 bg-background/95 backdrop-blur-sm">
       <div className="mx-auto grid h-20 max-w-lg grid-cols-4 items-center justify-around gap-2 px-2">
         {navItems.map((item) => {
-          // A lógica de ativação deve ser exata para a home e por prefixo para os outros.
-          const isActive = (item.href === '/app') 
-            ? pathname === item.href 
-            : pathname.startsWith(item.href);
+          const isActive = (pathname === item.href) || (pathname.startsWith(item.href) && item.href !== '/app');
 
           return (
             <Link
