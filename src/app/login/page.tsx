@@ -32,7 +32,7 @@ export default function LoginPage() {
       if (response.ok) {
         // A rota de API lida com o cookie.
         // Apenas redirecionamos e o middleware fará o resto.
-        router.push("/app");
+        router.push("/modules");
         router.refresh();
       } else {
         toast({
