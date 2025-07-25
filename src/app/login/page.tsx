@@ -12,45 +12,43 @@ import { useToast } from "@/hooks/use-toast";
 export default function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const { toast } = useToast();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (username === "Alpha" && password === "Alpha123") {
-      try {
-        const response = await fetch('/api/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ username, password }),
-        });
+    setIsLoading(true);
 
-        if (response.ok) {
-          router.push("/");
-          router.refresh(); 
-        } else {
-          toast({
-            variant: "destructive",
-            title: "Erro de Login",
-            description: "Credenciais inválidas. Por favor, tente novamente.",
-          });
-        }
-      } catch (error) {
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (response.ok) {
+        // A rota de API lida com o cookie, então apenas redirecionamos.
+        // O router.refresh() é importante para que o middleware seja reavaliado.
+        router.push("/");
+        router.refresh();
+      } else {
         toast({
           variant: "destructive",
-          title: "Erro de Rede",
-          description: "Não foi possível conectar ao servidor. Tente novamente mais tarde.",
+          title: "Erro de Login",
+          description: "Credenciais inválidas. Por favor, tente novamente.",
         });
       }
-    } else {
+    } catch (error) {
       toast({
         variant: "destructive",
-        title: "Erro de Login",
-        description: "Usuário ou senha incorretos.",
+        title: "Erro de Rede",
+        description: "Não foi possível conectar ao servidor. Tente novamente mais tarde.",
       });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -72,6 +70,7 @@ export default function LoginPage() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
+                disabled={isLoading}
               />
             </div>
             <div className="space-y-2">
@@ -83,11 +82,14 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                disabled={isLoading}
               />
             </div>
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-full">Entrar</Button>
+            <Button type="submit" className="w-full" disabled={isLoading}>
+              {isLoading ? "Entrando..." : "Entrar"}
+            </Button>
           </CardFooter>
         </form>
       </Card>

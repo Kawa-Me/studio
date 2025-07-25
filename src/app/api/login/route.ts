@@ -6,7 +6,8 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { username, password } = body;
 
-  if (username === process.env.LOGIN_USER && password === process.env.LOGIN_PASSWORD) {
+  // Corrigido: Usando os valores diretamente em vez de variáveis de ambiente não definidas.
+  if (username === "Alpha" && password === "Alpha123") {
     const cookieStore = cookies();
     cookieStore.set('auth-token', 'valid-token-for-alpha-ascent', { 
         httpOnly: true, 
