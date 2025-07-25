@@ -15,7 +15,7 @@ export default function ProfilePage() {
       <Card className="overflow-hidden rounded-xl border border-border bg-card/80 shadow-lg">
         <CardHeader className="items-center bg-muted/30 p-8 text-center">
           <Avatar className="h-32 w-32 border-4 border-primary/50 shadow-lg">
-            <AvatarImage src="https://placehold.co/128x128.png" alt="User avatar" data-ai-hint="alpha wolf" />
+            <AvatarImage src="https://placehold.co/128x128.png" alt="User avatar" data-ai-hint="alpha man" />
             <AvatarFallback>UA</AvatarFallback>
           </Avatar>
           <CardTitle className="mt-4 font-headline text-3xl">Usuário Alpha</CardTitle>
