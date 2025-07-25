@@ -3206,7 +3206,7 @@ const lessonContents: Record<string, React.ComponentType> = {
         <li>Peça feedback honesto sobre sua performance</li>
       </ul>
       
-      <h3 className="font-headline text-xl font-semibold mt-6">Exercício 3: Análise Pós-Encontro (Após cada encontro real)</h3>
+      <h3 className="font-headline text-xl font-semibold mt-6">Análise Pós-Encontro (Após cada encontro real)</h3>
       <ul className="list-disc pl-5 space-y-2 mt-4">
         <li>O que funcionou bem?</li>
         <li>O que poderia ter sido melhor?</li>
@@ -4179,7 +4179,7 @@ const lessonContents: Record<string, React.ComponentType> = {
 <li><strong>Conteúdo Polêmico ou Extremista:</strong> Evite postar conteúdo excessivamente político, religioso ou socialmente polarizador. Isso pode afastar um grande número de pessoas e gerar discussões desnecessárias.</li>
 <li><strong>Ex-Parceiras ou Dramas Passados:</strong> Suas redes sociais devem ser sobre o seu presente e futuro. Evite fotos ou menções a ex-parceiras, ou dramas de relacionamentos passados.</li>
 <li><strong>Falta de Atividade ou Perfil Vazio:</strong> Um perfil vazio ou com pouquíssimas postagens pode levantar bandeiras vermelhas. Parece que você não tem uma vida interessante ou que está escondendo algo.</li>
-</ol>
+</ul>
 <h2>EXERCÍCIO PRÁTICO 3: AUDITORIA DE REDES SOCIAIS</h2>
 <p>Faça uma auditoria completa de seus perfis nas redes sociais (Instagram, Facebook, TikTok, etc.). Passe 30 minutos revisando suas últimas 20-30 postagens.</p>
 <ol>
@@ -4396,13 +4396,14 @@ const lessonContents: Record<string, React.ComponentType> = {
   )
 };
 
-export default function LessonPage({
+export default async function LessonPage({
   params,
 }: {
   params: { moduleId: string; lessonId: string };
 }) {
-  const module = modules.find((m) => m.id === params.moduleId);
-  const lesson = module?.lessons.find((l) => l.id === params.lessonId);
+  const { moduleId, lessonId } = params;
+  const module = modules.find((m) => m.id === moduleId);
+  const lesson = module?.lessons.find((l) => l.id === lessonId);
 
   if (!module || !lesson) {
     notFound();
@@ -4419,9 +4420,7 @@ export default function LessonPage({
        <Breadcrumb className="mb-8">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink asChild>
-              <Link href="/modules">Módulos</Link>
-            </BreadcrumbLink>
+            <BreadcrumbLink href="/app">Módulos</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
