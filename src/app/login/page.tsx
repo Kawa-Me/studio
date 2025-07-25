@@ -32,7 +32,7 @@ export default function LoginPage() {
       if (response.ok) {
         // A rota de API lida com o cookie, então apenas redirecionamos.
         // O router.refresh() é importante para que o middleware seja reavaliado.
-        router.push("/");
+        router.push("/app");
         router.refresh();
       } else {
         toast({
@@ -54,7 +54,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <Card className="w-full max-w-md border-primary/20 shadow-lg shadow-primary/10">
+      <Card className="w-full max-w-md border-primary/20 bg-card/80 shadow-lg shadow-primary/10">
         <CardHeader className="text-center">
           <CardTitle className="font-headline text-3xl text-primary">MÉTODO HOMEM IMPARÁVEL</CardTitle>
           <CardDescription>Acesse sua jornada de transformação.</CardDescription>

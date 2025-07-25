@@ -34,16 +34,16 @@ export default function HomePage() {
           {modules.map((module, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card className="min-h-[75vh] border-2 border-primary/20 bg-card/50 shadow-lg shadow-primary/10">
+                <Card className="min-h-[75vh] rounded-xl border-2 border-primary/20 bg-card/50 shadow-lg shadow-primary/10">
                   <CardHeader className="text-center">
-                    <CardTitle className="font-headline text-xl md:text-3xl text-primary">{module.title}</CardTitle>
+                    <CardTitle className="font-headline text-xl text-primary md:text-3xl">{module.title}</CardTitle>
                     <CardDescription className="text-base md:text-lg">
                       {module.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {module.lessons.map((lesson) => (
-                       <Link href={lesson.path} key={lesson.id} className="block rounded-lg border border-border bg-background/50 p-4 transition-all duration-300 hover:bg-muted/50 hover:shadow-md hover:border-primary/50">
+                       <Link href={lesson.path} key={lesson.id} className="block rounded-lg border border-border bg-background/50 p-4 transition-all duration-300 hover:border-primary/50 hover:bg-muted/50 hover:shadow-md">
                         <div className="flex items-center justify-between">
                           <h4 className="flex-1 font-semibold text-sm">{lesson.title}</h4>
                           <PlayCircle className="h-5 w-5 text-primary" />

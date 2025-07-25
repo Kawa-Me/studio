@@ -7,19 +7,22 @@ export function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  // Se o usuário não está autenticado e tenta acessar qualquer rota exceto /login, redirecione para /login
-  if (!authToken && pathname !== '/login') {
+  const isPublicPath = pathname === '/login';
+  const isProtectedRoute = !isPublicPath;
+
+  // Se o usuário não está autenticado e tenta acessar uma rota protegida
+  if (!authToken && isProtectedRoute) {
     return NextResponse.redirect(new URL('/login', request.url));
   }
 
-  // Se o usuário está autenticado e tenta acessar /login, redirecione para a home
-  if (authToken && pathname === '/login') {
-    return NextResponse.redirect(new URL('/', request.url));
+  // Se o usuário está autenticado e tenta acessar a página de login
+  if (authToken && isPublicPath) {
+    return NextResponse.redirect(new URL('/app', request.url));
   }
   
-  // Se o usuário está autenticado e tenta acessar a raiz, reescreve para a página principal do app
+  // Se o usuário está autenticado e acessa a raiz, redireciona para a home do app
   if (authToken && pathname === '/') {
-    return NextResponse.rewrite(new URL('/app', request.url));
+    return NextResponse.redirect(new URL('/app', request.url));
   }
 
   return NextResponse.next();
