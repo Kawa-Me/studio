@@ -4,7 +4,7 @@ type VideoPlayerProps = {
 
 export function VideoPlayer({ videoId }: VideoPlayerProps) {
   return (
-    <div className="aspect-video w-full overflow-hidden rounded-xl border shadow-sm">
+    <div className="aspect-video w-full overflow-hidden rounded-xl border-2 border-primary/50 shadow-lg shadow-primary/20">
       <iframe
         width="100%"
         height="100%"
