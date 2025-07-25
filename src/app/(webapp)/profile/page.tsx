@@ -41,9 +41,6 @@ export default function ProfilePage() {
             <Separator className="my-8" />
             <div className="space-y-4 text-center">
                 <Button size="lg" variant="secondary" className="w-full max-w-sm">Minha Conta</Button>
-                 <Button size="lg" variant="ghost" className="w-full max-w-sm text-destructive hover:bg-destructive/10 hover:text-destructive">
-                    Sair
-                </Button>
             </div>
         </CardContent>
       </Card>
